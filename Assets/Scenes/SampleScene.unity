@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 980486906}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -814,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 980486903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.004, y: -1.055, z: 0}
+  m_LocalPosition: {x: -0.004, y: -1.1, z: 0}
   m_LocalScale: {x: 0.7274988, y: 0.1769, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxTime: 1.5
   heightRange: 0.45
-  _pipe: {fileID: 4507191273063784677, guid: d5f06f670a995954c8d0b12e970a4d29, type: 3}
+  _pipe: {fileID: 5122448134394408879, guid: 5b71f7fd75b2ada46b853ff1fc70eddb, type: 3}
 --- !u!4 &1550218591
 Transform:
   m_ObjectHideFlags: 0
@@ -981,7 +981,7 @@ Transform:
   m_GameObject: {fileID: 1550218589}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.374, y: 0.5215326, z: -0.005706607}
+  m_LocalPosition: {x: 2.374, y: -0.007, z: -0.005706607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
