@@ -19,7 +19,6 @@ public class FlyFlappy : MonoBehaviour
 
     void Update()
     {
-        // Vérifiez si le joueur est mort, si oui, ignorez les entrées
         if (isDead)
         {
             return;
@@ -33,7 +32,6 @@ public class FlyFlappy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Vérifiez si le joueur est mort, si oui, ignorez les rotations
         if (!isDead)
         {
             transform.rotation = Quaternion.Euler(0, 0, rb2D.velocity.y * rotationSpeed);
@@ -44,12 +42,8 @@ public class FlyFlappy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Death"))
         {
-            // Marquez le joueur comme mort
+
             isDead = true;
-
-            // Vous pouvez également désactiver d'autres composants ou effectuer d'autres actions ici si nécessaire
-
-            // Retardez le chargement de la scène pour laisser le temps à l'animation de mort de jouer
             StartCoroutine(LoadNextScene());
         }
     }
