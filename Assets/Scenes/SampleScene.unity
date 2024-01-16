@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 443091620}
   - component: {fileID: 443091622}
   m_Layer: 0
-  m_Name: Mobile - Flappy Bird - Version 12 Sprites_7
+  m_Name: Flappy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37c2a01b1bbf00547b14f656f7fb1441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 1259967913}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +801,7 @@ GameObject:
   - component: {fileID: 1259967912}
   - component: {fileID: 1259967911}
   - component: {fileID: 1259967910}
+  - component: {fileID: 1259967913}
   m_Layer: 5
   m_Name: ScoreTxt
   m_TagString: Untagged
@@ -883,6 +885,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259967908}
   m_CullTransparentMesh: 1
+--- !u!114 &1259967913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259967908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa2d09510fdcfc45bc64f87d6339a50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1550218589
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxTime: 1.5
   heightRange: 0.45
-  _pipe: {fileID: 1859484329673674388, guid: 9bbcf7469dbb2274d9d0b39416a285ea, type: 3}
+  _pipe: {fileID: 3142567513062788848, guid: e99451a2d19c99d4680297a945ddf772, type: 3}
 --- !u!4 &1550218591
 Transform:
   m_ObjectHideFlags: 0
@@ -941,7 +955,7 @@ GameObject:
   - component: {fileID: 1753611522}
   - component: {fileID: 1753611521}
   m_Layer: 0
-  m_Name: Mobile - Flappy Bird - Version 12 Sprites_3
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
