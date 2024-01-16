@@ -27,7 +27,7 @@ public class FlyFlappy : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb2D.velocity = Vector2.up * speed;
-        }
+        }       
     }
 
     private void FixedUpdate()
@@ -50,10 +50,10 @@ public class FlyFlappy : MonoBehaviour
 
     IEnumerator LoadNextScene()
     {
-        // Attendez quelques secondes avant de charger la scène suivante
+        // Attendez quelques secondes avant de charger la scï¿½ne suivante
         yield return new WaitForSeconds(2f);
 
-        // Chargez la scène suivante
+        // Chargez la scï¿½ne suivante
         SceneManager.LoadScene(1);
     }
 }
