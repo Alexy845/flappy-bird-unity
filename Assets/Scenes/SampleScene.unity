@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxTime: 5
   heightRange: 0.45
-  _pipe: {fileID: 0}
+  _pipe: {fileID: 9023076598099133716, guid: bb00e570a20c1304cb5062793f780315, type: 3}
 --- !u!4 &992698024
 Transform:
   m_ObjectHideFlags: 0
