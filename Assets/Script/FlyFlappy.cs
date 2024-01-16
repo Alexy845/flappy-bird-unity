@@ -12,6 +12,8 @@ public class FlyFlappy : MonoBehaviour
     private Rigidbody2D rb2D;
     private bool isDead = false;
 
+    public Score scoreText;
+
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -55,5 +57,14 @@ public class FlyFlappy : MonoBehaviour
 
         // Chargez la scène suivante
         SceneManager.LoadScene(1);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Column"))
+        {
+            print("Score Up");
+            scoreText.ScoreUp();
+        }
     }
 }
