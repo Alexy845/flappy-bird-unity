@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class FlyFlappy : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class FlyFlappy : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb2D.velocity = Vector2.up * speed;
         }
