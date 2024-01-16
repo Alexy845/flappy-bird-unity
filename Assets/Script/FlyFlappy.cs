@@ -46,17 +46,8 @@ public class FlyFlappy : MonoBehaviour
         {
 
             isDead = true;
-            StartCoroutine(LoadNextScene());
+            SceneManager.LoadScene(1);
         }
-    }
-
-    IEnumerator LoadNextScene()
-    {
-        // Attendez quelques secondes avant de charger la scène suivante
-        yield return new WaitForSeconds(2f);
-
-        // Chargez la scène suivante
-        SceneManager.LoadScene(1);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
