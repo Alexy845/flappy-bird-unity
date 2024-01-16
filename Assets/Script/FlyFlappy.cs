@@ -13,6 +13,7 @@ public class FlyFlappy : MonoBehaviour
     private bool isDead = false;
 
     public Score scoreText;
+    public Score scorePiece;
 
     void Start()
     {
@@ -57,5 +58,14 @@ public class FlyFlappy : MonoBehaviour
             print("Score Up");
             scoreText.ScoreUp();
         }
+
+        if (collision.CompareTag("Piece"))
+        {
+            print("Score Up");
+            scorePiece.ScoreUp();
+
+        }
     }
+
+
 }

@@ -15,6 +15,6 @@ public class Score : MonoBehaviour
     {
         score++;
         GetComponent<Text>().text = score.ToString();
-    }
 
+    }
 }
