@@ -64,6 +64,7 @@ public class FlyFlappy : MonoBehaviour
         {
             print("Score Up");
             scorePiece.ScoreUp();
+            collision.gameObject.SetActive(false);
 
         }
     }
